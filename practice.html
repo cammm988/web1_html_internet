@@ -7,18 +7,34 @@
 </head>
 <body>
 
-<ul id = "list">
-    <li>empty</li>
-    <li>empty</li>
-    <li>empty</li>
-    <li>empty</li>
-</ul>
-<input type = "button" value = "execute" id = "execute_btn" />
+<!--<ul id = "list">-->
+<!--    <li>empty</li>-->
+<!--    <li>empty</li>-->
+<!--    <li>empty</li>-->
+<!--    <li>empty</li>-->
+<!--</ul>-->
+<!--<input type = "button" value = "execute" id = "execute_btn" />-->
 <script type = text/javascript>
-    $('#execute_btn').click(function() {
+var plusObj = {}
+    function plus(num1, num2){
+        var num = num1 + num2;
+        plusObj = this;
+        this.nick = "LichKing";
 
-    $('#list li').text('coding everybody');
-    })
+        return {
+            nick : "LichKing",
+            job : "programmer"
+        }
+    }
+
+
+
+    var obj = new plus(1, 2);
+    console.log(plusObj.nick)
+
+
+
+
 
 </script>
 
